@@ -5,7 +5,8 @@
         
     </head>
     <body>
-
-    </body
-    >
+        <?php 
+            require_once('config/router.php')
+        ?>
+    </body>
 </html>

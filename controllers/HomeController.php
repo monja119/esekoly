@@ -1,9 +1,9 @@
 <?php
 
-class UserController {
+class HomeController {
 
-    public function index($id) {
-        echo "showing profile";
+    public function index() {
+        echo "indexed";
     }
     
     public function updateProfile($id, $data) {

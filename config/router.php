@@ -1,11 +1,11 @@
-// Exemple de fichier router.php
+<?php
 
 // Définition des routes
 $routes = [
     '/' => 'HomeController@index',
     '/user/profile' => 'UserController@showProfile',
     '/user/update' => 'UserController@updateProfile',
-    // Autres routes...
+    
 ];
 
 // Récupération de l'URL actuelle
@@ -26,7 +26,12 @@ if (array_key_exists($currentUrl, $routes)) {
     
     // Appel de l'action correspondante
     $controller->$actionName();
+
 } else {
     // Gestion de la route non trouvée (404)
-    echo 'Page not found';
+    require_once('views/404.php');
 }
+
+
+
+?>
