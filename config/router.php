@@ -6,6 +6,10 @@ $routes = [
     '/user/profile' => 'UserController@showProfile',
     '/user/update' => 'UserController@updateProfile',
     
+    '/auth/login' => 'AuthController@login',
+    '/auth/register' => 'AuthController@register',
+
+    
 ];
 
 // Récupération de l'URL actuelle
