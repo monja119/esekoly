@@ -2,14 +2,15 @@
 
 // Définition des routes
 $routes = [
+    // controller @ action @ titre
     '/' => 'HomeController@index',
     '/user/profile' => 'UserController@showProfile',
     '/user/update' => 'UserController@updateProfile',
     
-    '/auth/login' => 'AuthController@login',
-    '/auth/register' => 'AuthController@register',
+    '/login' => 'AuthController@login',
+    '/register' => 'AuthController@register',
 
-    
+
 ];
 
 // Récupération de l'URL actuelle
