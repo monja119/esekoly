@@ -1,19 +1,19 @@
 
-<div className="container-fluid">
-    <div className="row bg-warning mt-5 justify-content-center">
-        <div className="col-10">
-        <div className="content-wrapper">
+<div class="container-fluid">
+    <div class="row bg-warning mt-5 justify-content-center">
+        <div class="col-10">
+        <div class="content-wrapper">
 
-            <section className="content-header">
-                <div className="container-fluid">
-                    <div className="row mb-2">
-                        <div className="col-sm-6">
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
                             <h1>404 Error Page</h1>
                         </div>
-                        <div className="col-sm-6">
-                            <ol className="breadcrumb float-sm-right">
-                                <li className="breadcrumb-item"><a href="/">Home</a></li>
-                                <li className="breadcrumb-item active">404 Error Page</li>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active">404 Error Page</li>
                             </ol>
                         </div>
                     </div>
@@ -22,12 +22,12 @@
             </section>
 
 
-            <section className="content">
-                <div className="error-page">
-                    <h2 className="headline text-warning"> 404</h2>
+            <section class="content">
+                <div class="error-page">
+                    <h2 class="headline text-warning"> 404</h2>
 
-                    <div className="error-content">
-                        <h3><i className="fas fa-exclamation-triangle text-warning"></i> Oops! Page not found.</h3>
+                    <div class="error-content">
+                        <h3><i class="fas fa-exclamation-triangle text-warning"></i> Oops! Page not found.</h3>
 
                         <p>
                             We could not find the page you were looking for.
@@ -35,13 +35,13 @@
                             search form.
                         </p>
 
-                        <form className="search-form">
-                            <div className="input-group">
-                                <input type="text" name="search" className="form-control" placeholder="Search" />
+                        <form class="search-form">
+                            <div class="input-group">
+                                <input type="text" name="search" class="form-control" placeholder="Search" />
 
-                                    <div className="input-group-append">
-                                        <button type="submit" name="submit" className="btn btn-warning"><i
-                                            className="fas fa-search"></i>
+                                    <div class="input-group-append">
+                                        <button type="submit" name="submit" class="btn btn-warning"><i
+                                            class="fas fa-search"></i>
                                         </button>
                                     </div>
                             </div>

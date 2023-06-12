@@ -6,7 +6,7 @@
     </head>
     <body>
         <?php 
-            require_once('config/router.php')
+            require_once('controllers/router.php');
         ?>
     </body>
 </html>

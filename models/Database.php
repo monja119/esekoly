@@ -12,7 +12,7 @@ class Database {
         $this->username = $username;
         $this->password = $password;
         $this->database = $database;
-
+            
         // Établir la connexion à la base de données
         try {
             $this->connection = new PDO("mysql:host=$this->host;dbname=$this->database", $this->username, $this->password);

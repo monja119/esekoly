@@ -9,7 +9,11 @@
                 <div class="card">
                     <div class="card-body login-card-body">
                         <p class="login-box-msg">S'identifier</p>
-                        <p id='error' class="login-box-msg text-danger">errorMessage</p>
+                        <p id='error' class="login-box-msg text-danger">
+                            <?php
+                                echo $error_message;
+                            ?>
+                        </p>
 
                         <form action="/login" method="post" onSubmit="" >
                             <div class="    input-group mb-3">
@@ -59,7 +63,7 @@
                             <a href="">Mot de passe oublié ?</a>
                         </p>
                         <p class="mb-0">
-                            <a href="register.php" class="text-center">Créer un compte</a>
+                            <a href="/register" class="text-center">Créer un compte</a>
                         </p>
                     </div>
 
