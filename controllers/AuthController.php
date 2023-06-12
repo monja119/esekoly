@@ -6,11 +6,12 @@ class AuthController{
         if($_POST){
             $email = $_POST['email'];
             $passwword = $_POST['password'];
-
+                
+            echo 'ton mot de passe est '.$passwword;            
 
         }
         else {
-            echo "no post";
+            require_once('views/forms/login.php');
         }
 
     }
