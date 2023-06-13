@@ -140,7 +140,7 @@ class AuthController{
 
                     $statement->execute();
                     
-                    render('forms/register', 'Identification - Esekoly');
+                    render('forms/login', 'Identification - Esekoly');
                     exit;
                     
                 }
@@ -149,7 +149,7 @@ class AuthController{
         }
 
         else {
-            require_once('views/forms/register.php');
+            render('forms/register', 'Création de compte - Esekoly');
         }
     }
 

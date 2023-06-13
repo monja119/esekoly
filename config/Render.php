@@ -12,7 +12,8 @@ function render($view, $title, $data=null, $with_head = false){
             <head>
                 <title> <?php echo $title; ?>  </title>
                 <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
-                <link type="text/css" rel="stylesheet" href="assets/fontawesome/all.css" />
+                <link type="text/css" rel="stylesheet" href="assets/css/fontawesome/font-awesome.min.css" />
+                <link type="text/css" rel="stylesheet" href="assets/css/bootstrap-theme.css" />
             </head>
             <body>
             <?php

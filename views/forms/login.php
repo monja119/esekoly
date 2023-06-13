@@ -40,7 +40,7 @@
                                 <input name="password" type="password" id="password" class="form-control" placeholder="Mot de passe" />
                                     <div class="input-group-append">
                                         <div class="input-group-text">
-                                            <span class="fas fa-lock"></span>
+                                            <i class="fa fa-twitter fa-2"></i>
                                         </div>
                                     </div>
                             </div>
