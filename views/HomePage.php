@@ -6,14 +6,14 @@
 	
 	<title>	E-Sekoly Page Landing</title>
 
-	<link rel="shortcut icon" href="/assets/css//homepage/MyImages/logo1.png">
+	<link rel="shortcut icon" href="/assets/css/homepage/MyImages/logo1.png">
 	
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/homepage//bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/homepage//font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/homepage//bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="assets/css/homepage//main.css">
-	<link rel="stylesheet" href="assets/css/homepage//myCustomize.css">
+	<link rel="stylesheet" href="assets/css/homepage/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/homepage/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/homepage/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/homepage/main.css">
+	<link rel="stylesheet" href="assets/css/homepage/myCustomize.css">
 
 </head>
 
@@ -98,7 +98,7 @@
 	<!-- /Highlights -->
 
 	<?php
-	include 'footer.php'
+	include 'views/footer.php'
 	?>
 	
 </body>
