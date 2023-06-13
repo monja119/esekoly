@@ -1,0 +1,16 @@
+ .logo-img{
+    width: 250px;
+    height: 50px;
+  
+   
+} 
+.navbar-brand {
+    padding: 0; /* Supprime le padding par défaut */
+  }
+  
+  .navbar-brand img {
+    margin-top: 0; /* Supprime la marge supérieure */
+    height: 50px; /* Ajuste la hauteur du logo selon vos besoins */
+    /* Ajoutez d'autres styles personnalisés au besoin */
+  }
+  
