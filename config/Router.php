@@ -2,9 +2,14 @@
 
 // Définition des routes
 $routes = [
+
     // controller @ action 
-    '' => 'HomeController@index',
-    '/' => 'HomeController@index',
+    '' => 'HomePageController@index',
+    '/' => 'HomePageController@index',
+    '/about' => 'HomePageController@about',
+    '/contact' => 'HomePageController@contact',
+
+
     '/user/profile' => 'UserController@showProfile',
     '/user/update' => 'UserController@updateProfile',
     

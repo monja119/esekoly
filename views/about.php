@@ -6,14 +6,14 @@
 	
 	<title>	About E-SEKOLY</title>
 
-	<link rel="shortcut icon" href="assets/css/homepage/MyImages/logo1.png">
+	<link rel="shortcut icon" href="assets/homepage/MyImages/logo1.png">
 	
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/homepage/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/homepage/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/homepage/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="assets/homepage/main.css">
-	<link rel="stylesheet" href="assets/homepage/myCustomize.css">
+	<link rel="stylesheet" href="assets/homepage/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/homepage/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/homepage/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/homepage/css/main.css">
+	<link rel="stylesheet" href="assets/homepage/css/myCustomize.css">
     
     <title>A propos de Nous</title>
 </head>
@@ -24,7 +24,7 @@
 			<div class="navbar-header">
 				<!-- Button for petit screens -->
 				<button  type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="index.html"><img  src="assets/css/homepage/MyImages/logo3.png" ></a>
+				<a class="navbar-brand" href="index.html"><img  src="assets/homepage/MyImages/logo3.png" ></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
@@ -59,7 +59,7 @@
 					<h1 class="page-title">A propos de la plateforme</h1>
 				</header>
 				<h3>Gestion des emplois du temps</h3>
-				<p><img src="assets/MyImages/Student.jfif" alt="" class="img-rounded pull-right" width="300" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.</p>
+				<p><img src="assets/homepage/MyImages/Student.jfif" alt="" class="img-rounded pull-right" width="300" > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam beatae soluta accusantium iusto nihil nesciunt unde veniam magnam repudiandae sapiente.</p>
 				<p>Quos, aliquam nam velit impedit minus tenetur beatae voluptas facere sint pariatur! Voluptatibus, quisquam, error, est assumenda corporis inventore illo nesciunt iure aut dolor possimus repellat minima veniam alias eius!</p>
 				<h3>Gestions des notes</h3>
 				<p>Velit, odit, eius, libero unde impedit quaerat dolorem assumenda alias consequuntur optio quae maiores ratione tempore sit aliquid architecto eligendi pariatur ab soluta doloremque dicta aspernatur labore quibusdam dolore corrupti quod inventore. Maiores, repellat, consequuntur eius repellendus eos aliquid molestiae ea laborum ex quibusdam laudantium voluptates placeat consectetur quam aliquam!</p>

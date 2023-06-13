@@ -2,7 +2,7 @@
 require_once('config/Render.php');
 require_once('config/Database.php');
 
-class HomeController {
+class HomePageController {
 
     
     public function index() {
@@ -38,6 +38,14 @@ class HomeController {
         else{
             render('HomePage', 'E-Sekoly Page Landing', null, true);
         }
+    }
+
+    public function about (){
+        render('about', 'A propos', null, true);
+    }
+
+    public function contact (){
+        render('contact', 'Contact');
     }
     
 }
