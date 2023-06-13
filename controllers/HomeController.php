@@ -1,14 +1,42 @@
 <?php
+require_once('config/Render.php');
+require_once('config/Database.php');
 
 class HomeController {
 
     
     public function index() {
-        if(isset($_SESSION['user_id'])){
-            echo 'logged in';
+        session_start();
+
+        if(isset($_SESSION['id'])){
+            // db
+            $database = new Database('localhost', 'user', 'password', 'esekoly');
+            
+            // obtention de cnx PDO
+            $connection = $database -> getConnection();
+
+            // requete
+            $query = "SELECT * FROM user WHERE id = :id";
+            $statement = $connection->prepare($query);
+            
+            // Bind des valeurs
+            $statement->bindParam(':id', $_SESSION['id']);
+
+            $statement->execute();
+
+            // Utilisation de fetch(PDO::FETCH_ASSOC) pour récupérer une seule ligne
+            $user = $statement->fetch(PDO::FETCH_ASSOC);
+
+            if(!$user){
+                render('forms/login', 'Identification');
+            }
+            else {
+                render('onglets/home', 'Esekoly', compact('user'));
+            }
+
         }   
         else{
-            require_once('views/HomePage.php');
+            render('HomePage', 'Esekoly');
         }
     }
     

@@ -1,6 +1,8 @@
 <?php
+require_once('config/Database.php');
+require_once('config/Render.php');
 require_once('models/UserModels.php');
-require_once('models/Database.php');
+
 
 class AuthController{
     public function login(){
@@ -28,19 +30,40 @@ class AuthController{
             $row = $statement->fetch(PDO::FETCH_ASSOC);
 
             // Vérification du résultat
-            if ($row && password_verify($password, $row['password'])) {
+            if ($row) {
                 // Le mot de passe correspond, l'utilisateur est authentifié
-                echo 'logged in: ' . $row['first_name'] . ' - ' . $row['last_name'] . '<br>';
+                if(!password_verify($password, $row['password'])){
+                    $error_message = 'Mot de passe incorrect';
+                    
+                    $data = compact('error_message', 'email');
+                
+                    render('forms/login', 'Identification - Mot de passe incorrect', $data);
+
+                }else{
+
+                    session_start();
+
+                    $_SESSION['id'] = $row['id'];
+                    
+                    header('Location: /');
+
+
+                }
+                
             } else {
-                $error_message = 'Identifiant inconnu ou mot de passe incorrect';
-                require_once('views/forms/login.php');
+                $error_message = 'Email non existant';
+                
+                $data = compact('error_message');
+                
+                render('forms/login', 'Email non existant', $data);
+                
             }
             
 
-
         }
         else {
-            require_once('views/forms/login.php');
+            render('forms/login', 'Identification');
+            
         }
 
     }
@@ -73,7 +96,9 @@ class AuthController{
             // Vérification du résultat
             if ($row) {
                 $error_message = "l'addresse mail est déjà utilisé";
-                require_once('views/forms/register.php');
+
+                $data = compact('error_message');
+                render('forms/register', 'Erreur de création', $data);
             }
             else {
 
@@ -83,7 +108,9 @@ class AuthController{
                 $password2 = $_POST['password2'];
                 if($password != $password2){
                     $error_message = 'les deux mot de passe ne collent pas';
-                    require_once('views/forms/register.php');
+                    
+                    $data = compact('error_message');
+                    render('forms/register.php', 'Erreur de création', $data);
                 }else{     
                     // hashage de password
                     $password = password_hash($password, PASSWORD_DEFAULT);               
@@ -102,7 +129,7 @@ class AuthController{
                          ";
                     $statement = $connection->prepare($query);
                     
-                    // Bind des valeurs
+                    // Binding des values
                     $statement->bindParam(':first_name', $first_name);
                     $statement->bindParam(':last_name', $last_name);
                     $statement->bindParam(':birthday', $birthday);
@@ -113,7 +140,7 @@ class AuthController{
 
                     $statement->execute();
                     
-                    header("Location: /login");
+                    render('forms/register', 'Identification - Esekoly');
                     exit;
                     
                 }
@@ -124,6 +151,14 @@ class AuthController{
         else {
             require_once('views/forms/register.php');
         }
+    }
+
+
+    public function logout(){
+        session_start();
+        session_destroy();
+
+        header('Location: /');
     }
 }
 

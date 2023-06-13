@@ -6,7 +6,7 @@
                     <b>Esekoly</b>
                 </div>
 
-                <div class="card">
+                <div class="card elevation-3">
                     <div class="card-body login-card-body">
                         <p class="login-box-msg">S'identifier</p>
                         <p id='error' class="login-box-msg text-danger">
@@ -17,7 +17,19 @@
 
                         <form action="/login" method="post" onSubmit="" >
                             <div class="    input-group mb-3">
-                                <input name="email" type="email" id="email" class="form-control" placeholder="Email" />
+                                <input name="email"
+                                    type="email"
+                                     id="email" 
+                                     class="form-control" 
+                                     placeholder="Email"
+                                     <?php 
+                                        // mentient de la valeur précedente
+                                        if($email){
+                                            echo 'value='.$email;
+                                        }
+                                      ?>
+                                     />
+
                                     <div class="input-group-append">
                                         <div class="input-group-text">
                                         <i class="fa-solid fa-envelope"></i>
