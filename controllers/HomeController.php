@@ -36,7 +36,7 @@ class HomeController {
 
         }   
         else{
-            render('HomePage', 'Esekoly');
+            render('HomePage', 'E-Sekoly Page Landing', null, true);
         }
     }
     

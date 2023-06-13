@@ -9,11 +9,11 @@
 	<link rel="shortcut icon" href="assets/css/homepage/MyImages/logo1.png">
 	
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/homepage/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/homepage/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/homepage/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="assets/css/homepage/main.css">
-	<link rel="stylesheet" href="assets/css/homepage/myCustomize.css">
+	<link rel="stylesheet" href="assets/homepage/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/homepage/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/homepage/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/homepage/main.css">
+	<link rel="stylesheet" href="assets/homepage/myCustomize.css">
     
     <title>A propos de Nous</title>
 </head>
@@ -28,10 +28,10 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="index.php">Acceuil</a></li>
-					<li><a href="#">A propos</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a class="btn" href="signin.html">LOGIN / SIGN IN</a></li>
+					<li class="active"><a href="/">Acceuil</a></li>
+					<li><a href="/about">A propos</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a class="btn" href="/login">LOGIN / SIGN IN</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -47,7 +47,7 @@
 	<div class="container">
 
 		<ol class="breadcrumb">
-			<li><a href="index.php">Acceuil</a></li>
+			<li><a href="/">Acceuil</a></li>
 			<li class="active">A propos</li>
 		</ol>
 
@@ -79,7 +79,7 @@
 
 
 <?php
-	include 'footer.php';
+	include 'views/footer.php';
 ?>
 </body>
 </html>

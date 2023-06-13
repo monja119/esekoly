@@ -65,10 +65,10 @@
 					<div class="col-md-6 widget">
 						<div class="widget-body">
 							<p class="simplenav">
-								<a href="index.php">Acceuil</a> | 
-								<a href="about.php">A propos</a> |
-								<a href="contact.html">Contact</a> |
-								<b><a href="#">Sign up</a></b>
+								<a href="/">Acceuil</a> | 
+								<a href="/about">A propos</a> |
+								<a href="/contact">Contact</a> |
+								<b><a href="/register">Sign up</a></b>
 							</p>
 						</div>
 					</div>
@@ -90,7 +90,7 @@
     <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/template.js"></script>
+	<script src="assets/homepage/js/headroom.min.js"></script>
+	<script src="assets/homepage/js/jQuery.headroom.min.js"></script>
+	<script src="assets/homepage/js/template.js"></script>
 

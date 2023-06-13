@@ -3,6 +3,7 @@
 // Définition des routes
 $routes = [
     // controller @ action 
+    '' => 'HomeController@index',
     '/' => 'HomeController@index',
     '/user/profile' => 'UserController@showProfile',
     '/user/update' => 'UserController@updateProfile',
@@ -38,7 +39,9 @@ if (array_key_exists($currentUrl, $routes)) {
 
 } else {
     // Gestion de la route non trouvée (404)
-    require_once('views/404.php');
+    require_once('config/Render.php');
+
+    render('404', 'Page Introuvable');
 }
 
 

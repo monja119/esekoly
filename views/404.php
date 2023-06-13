@@ -1,6 +1,6 @@
 
 <div class="container-fluid">
-    <div class="row bg-warning mt-5 justify-content-center">
+    <div class="row mt-5 justify-content-center">
         <div class="col-10">
         <div class="content-wrapper">
 

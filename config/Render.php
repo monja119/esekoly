@@ -1,24 +1,30 @@
 <?php
 
-function render($view, $title,$data=null){
+function render($view, $title, $data=null, $with_head = false){
     if($data){
         $data = extract($data);
     }
     
-?>
-
-    <html>
-        <head>
-            <title> <?php echo $title; ?>  </title>
-            <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
-            <link type="text/css" rel="stylesheet" href="assets/fontawesome/all.css" />
-        </head>
-        <body>
-            <?php 
+    if($with_head == false){
+    
+    ?>
+        <html>
+            <head>
+                <title> <?php echo $title; ?>  </title>
+                <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css" />
+                <link type="text/css" rel="stylesheet" href="assets/fontawesome/all.css" />
+            </head>
+            <body>
+            <?php
                 require_once('views/'.$view.'.php');
-            ?> 
-        </body>
-    </html>
+            ?>
+            </body>
+        </html>
 
-
-<?php }?>
+    <?php 
+    }
+    else {
+        require('views/'.$view.'.php');
+    }
+}    
+?>

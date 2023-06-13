@@ -4,16 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	
-	<title>	E-Sekoly Page Landing</title>
 
-	<link rel="shortcut icon" href="/assets/css/homepage/MyImages/logo1.png">
+	<link rel="shortcut icon" href="assets/css/homepage/MyImages/logo1.png">
 	
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/homepage/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/homepage/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/homepage/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="assets/css/homepage/main.css">
-	<link rel="stylesheet" href="assets/css/homepage/myCustomize.css">
+	<link rel="stylesheet" href="assets/homepage/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/homepage/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/homepage/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/homepage/css/main.css">
+	<link rel="stylesheet" href="assets/homepage/css/myCustomize.css">
 
 </head>
 
@@ -24,14 +23,14 @@
 			<div class="navbar-header">
 				<!-- Button for petit screens -->
 				<button  type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="index.html"><img  src="./assets/MyImages/logo3.png" ></a>
+				<a class="navbar-brand" href="/"><img  src="assets/homepage/MyImages/logo3.png" ></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="#">Acceuil</a></li>
-					<li><a href="about.php">A propos</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a class="btn" href="signin.html">LOGIN / SIGN IN</a></li>
+					<li class="active"><a href="/">Acceuil</a></li>
+					<li><a href="/about">A propos</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a class="btn" href="/login">LOGIN / SIGN IN</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -44,7 +43,7 @@
 			<div class="row">
 				<h1 class="lead">E-SEKOLY</h1>
 				<p class="tagline">"Votre avenir commence ici !" </p>
-				<p><a class="btn btn-default btn-lg" role="button">Découvrir</a> <a class="btn btn-action btn-lg" role="button">Se connecter</a></p>
+				<p><a class="btn btn-default btn-lg" role="button">Découvrir</a> <a class="btn btn-action btn-lg" role="button" href="/login">Se connecter</a></p>
 			</div>
 		</div>
 	</header>
